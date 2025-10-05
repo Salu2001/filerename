@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Get bot token from environment variable (for security)
-BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '8499733785:AAEPh5oGZrPgaq_bFR7No6EEo1XBsdAI3x4')
+BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', 'YOUR_TELEGRAM_BOT_TOKEN')
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Store user preferences (in production, use a database)
